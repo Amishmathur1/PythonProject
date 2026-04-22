@@ -51,3 +51,31 @@ The program needs your grades in a specific format to work.
 - **Summary View:** Option to view all semesters at once.
 
 *Note: Make sure `Project.py` and `marksheet.csv` are always in the same folder!*
+
+---
+
+# ⚡ Electricity Bill Calculator
+
+This program calculates your electricity bill based on slab rates provided in a CSV file (`ElecBill.csv`). It calculates the consumption by taking previous and current meter readings and provides a detailed cost breakdown.
+
+## 🚀 How to Set Up
+
+### 1. File Preparation
+* Ensure both `Assignment2.py` and `ElecBill.csv` are in the same folder.
+
+### 2. The Slab Data (`ElecBill.csv`)
+The program reads rates from `ElecBill.csv`. The file should follow this structure:
+- **From Unit**: Starting unit of the slab.
+- **To Unit**: Ending unit of the slab (use "Above" for the final slab).
+- **Rate (Rs.)**: The cost per unit for that range.
+
+## 🛠️ How to Run
+1. Open your terminal or VS Code in the project folder.
+2. Run the command: `python Assignment2.py`
+3. Enter the requested meter readings.
+
+## 📖 Features
+- **Slab-based Logic:** Handles complex multi-tier billing automatically.
+- **Detailed Invoice:** Displays a formatted table with ranges, units consumed, rates, and costs.
+- **Error Handling:** Prevents incorrect data entry (e.g., current reading lower than previous).
+

@@ -35,7 +35,7 @@ def calculate_bill(units, slabs):
 try:
     slabs = []
 
-    with open('/home/amish/Documents/Coding Stuff/Python/ElecBill.csv', 'r') as file:
+    with open('ElecBill.csv', 'r') as file:
         reader = csv.DictReader(file)
 
         for row in reader:
