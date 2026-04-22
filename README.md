@@ -1,36 +1,53 @@
-Step 1: Preparing your Marksheet Data
+# 📊 SRM Academic Marksheet Manager
 
-To get your grades into the program, follow these exact steps:
+This program helps you view your semester grades, calculate SGPA for a specific semester, and track your Cumulative CGPA (from Semester 1 up to your chosen semester).
 
-    Login: Go to the SRM Student Portal.
+---
 
-    Navigate: Go to the Grade/Mark & Credit section.
+## 🚀 How to Set Up (No Git Required)
 
-    Copy Data: Highlight and copy all the entries (the table containing Semester, Course Code, Description, Credits, and Grade).
+Since you don't have Git installed, follow these steps to manually set up the project on your computer:
 
-    Create Excel: Open Microsoft Excel and Paste the data.
+### 1. Create the Project Folder
+* Create a new folder on your computer (e.g., Desktop or Documents) and name it `PythonProject`.
 
-    Format Check: Ensure your columns are in this order: Semester, Month / Year, Code, Description, Credit, Grade.
+### 2. Copy the Python Code
+* Click on the file named `Project.py` here on GitHub.
+* Click the **"Raw"** button (top right of the code block).
+* Press `Ctrl + A` (Select All) then `Ctrl + C` (Copy).
+* Open **Notepad** or **VS Code** on your laptop, paste the code, and save it as `Project.py` inside your `PythonProject` folder.
 
-    Save File: * Go to File > Save As.
+### 3. Prepare your Marksheet (The CSV File)
+The program needs your grades in a specific format to work.
+1. **Login:** Go to the **SRM Student Portal**.
+2. **Navigate:** Go to the **Grade/Mark & Credit** section.
+3. **Copy Data:** Highlight and copy the entire table (Semester, Code, Description, Credit, Grade).
+4. **Excel:** Open Excel and **Paste** the data.
+5. **Format Check:** Ensure your columns are: `Semester`, `Month / Year`, `Code`, `Description`, `Credit`, `Grade`.
+6. **Save:** Go to **File > Save As**. 
+   * Select your `PythonProject` folder.
+   * Change "Save as type" to **CSV (Comma delimited) (*.csv)**.
+   * Name it exactly: `marksheet.csv`
 
-        Choose the folder where you saved the Python script.
+---
 
-        Set the "Save as type" to CSV (Comma delimited) (*.csv).
+## 🛠️ How to Run the Program
 
-        Name the file marksheet.csv.
+### If you have VS Code:
+1. Open VS Code.
+2. Go to **File > Open Folder** and select your `PythonProject` folder.
+3. Open `Project.py` and click the **Play button** (top right).
 
-Step 2: Configuring the Python Script
+### If you are using the Terminal/CMD:
+1. Open Command Prompt or Terminal.
+2. Type `cd` followed by the path to your folder (Example: `cd Desktop/PythonProject`).
+3. Type `python Project.py` and press **Enter**.
 
-If you saved the marksheet.csv file in the same folder as the Python script, the program will find it automatically.
+---
 
-If you saved it somewhere else, do the following:
+## 📖 Features
+- **Menu Driven:** Easy options to select Semesters 1-5.
+- **Auto-Calculation:** Calculates SGPA and Cumulative CGPA instantly.
+- **Summary View:** Option to view all semesters at once.
 
-    Locate your marksheet.csv file.
-
-    Right-click the file and select Copy as path (on Windows) or Get Info (on Mac).
-
-    Open the Python script and look for this line at the very bottom:
-    record = AcademicRecord('marksheet.csv')
-
-    Replace 'marksheet.csv' with your copied path (e.g., 'C:/Users/Name/Documents/marksheet.csv').
+*Note: Make sure `Project.py` and `marksheet.csv` are always in the same folder!*
